@@ -6,4 +6,4 @@ multa = (float((vel - limite)) * 7)
 if vel <= limite:
     print('Você está na velocidade correta da via! Dirija com segurança e tenha um bom dia!')
 else:
-    print(f'MULTADO! Você excedeu o limite da velocidade da via({limite}Km/h)\n Sua multa é de R${multa:.2f}!' )
+    print(f'\033[0;31mMULTADO!\033[m Você excedeu o limite da velocidade da via({limite}Km/h)\n Sua multa é de R${multa:.2f}!' )
