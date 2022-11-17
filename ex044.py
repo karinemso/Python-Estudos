@@ -11,14 +11,21 @@ choice = int(input('Digite o número correspondente à opção desejada: '))
 if choice == 1:
     price = product - (product * 0.1)
     economy = product - price
-    print(f'O valor final do seu produto é de R${price} e você economizou R${economy}')
+    print(f'O valor final do seu produto é de R${price:.2f} e você economizou R${economy:.2f}')
 elif choice == 2:
     price = product - (product * 0.05)
     economy = product - price
-    print(f'O valor final do seu produto é de R${price} e você economizou R${economy}')
+    print(f'O valor final do seu produto é de R${price:.2f} e você economizou R${economy:.2f}')
 elif choice == 3:
-    print(f'O valor final do seu produto é de R${product} e você não economizou!')
+    parcela = product/2
+    print(f'O valor final do seu produto é de R${product:.2f} e você pagará 2x de R${parcela:.2f}!')
 elif choice == 4:
+    parcela = int(input('Quantas vezes você deseja parcelar? '))
     price = product + (product * 0.2)
+    prestação = price/ parcela
     waste = price - product
-    print(f'O valor final do seu produto é de R${price} e você acrescentou R${waste} ao valor original!')
+    print(f'O valor final do seu produto é de R${price:.2f} e você acrescentou R${waste:.2f} ao valor original!')
+    print(f'Você pagará {parcela} parcelas de {prestação:.2f}')
+else:
+    print('Opção inválida! Tente novamente!')
+

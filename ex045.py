@@ -8,8 +8,11 @@ print('-=-'*15)
 your_choice = str(input('Digite pedra, papel ou tesoura: ')).lower()
 possible = ['pedra', 'papel', 'tesoura']
 mychoice = choice(possible)
-print('PROCESSANDO...')
+print('JO')
 sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
 
 
 if mychoice == your_choice:
