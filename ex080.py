@@ -1,37 +1,17 @@
-'''nums = []
-
-Precisamos ordenar os números
-Minha primeira ideia é colocar o max e o min nos seus devidos lugares.
-Nos restam 3 números para posicionar
-min min2 media max2 max 1
-min2 é maior que o min e menor que a media
-media é maior que min1 e min 2 e menor que max 1 e max 2
-max2 é maior que a media e menor que max 1
-
-
+nums = []
 
 for c in range(0,5):
     num = int(input('Digite  um número: '))
-    nums.append(num)
+    if c == 0 or num > nums[-1]:
+        nums.append(num)
+        print(f'Valor adicionado ao final da lista')
+    else:
+        pos = 0
+        while pos < len(nums):
+            if num <= nums[pos]:
+                nums.insert(pos, num)
+                print(f'Valor adicionado na posição {pos}')
+                break
+            pos+=1
 
-   
-max1 = max(nums)
-min1 = min(nums)    
-c = 0
-media = 0
-for n in nums:
-    if min1 < n < max1 and c == 0:
-        media = n
-    if n == media:
-        media = n
-    if n < media and n > min1:
-        min2 = n
-    if n > media and n < max1:
-        max2=n
-    c+=1
-  
-
-print(nums)
-print(min1, min2, media, max2, max1)
-'''
-#Ainda pensando na solução
+print(f'Sua lista em ordem crescente é: {nums}')

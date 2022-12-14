@@ -27,5 +27,5 @@ for n in nums:
 print('-=-' * 10)
 print(f'Os números digitados foram: {nums}')
 print(f'Dentre eles, os números pares são: {nums_pares}')
-print(f'E os impares: {nums_impares}')
+print(f'E os ímpares: {nums_impares}')
 print('-=-' * 10)

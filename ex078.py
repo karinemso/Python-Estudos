@@ -1,9 +1,9 @@
 nums = []
 for c in range(0,5):
     if c == 0:
-        num = int(input('Digite um número:'))
+        num = int(input(f'Digite um número na Posição {c}: '))
     else:
-        num = int(input('Digite mais um número:'))
+        num = int(input(f'Digite mais um número na Posição {c}: '))
     nums.append(num)
 
 
@@ -21,7 +21,8 @@ for c, n in enumerate(nums):
         
 
 
-
-print(f' Os números digitados foram {nums}')
+print('-=-'*20)
+print(f'Os números digitados foram {nums}:')
 print(f'O maior número digitado foi {max} e ele esta nas posições: {max_position}')
 print(f'O menor número digitado foi {min} e ele esta nas posições: {min_position}')
+print('-=-'*20)

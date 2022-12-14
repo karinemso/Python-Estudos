@@ -19,9 +19,9 @@ while True:
 print('-'*40)
 print(f'{"Resultado":^40}')
 print('-'*40)
-print(f'{c} numéros foram digitados')
+print(f'{c} números foram digitados')
 print(f'A lista em ordem decrescente é: {sorted(nums, reverse= True)}')
 if 5 in nums:
-    print(f'O número 5 foi digitado')
+    print(f'O número 5 foi digitado!')
 else:
-    print(f'O número 5 \033[0;31mNÃO\033[m foi digitado')
+    print(f'O número 5 \033[0;31mNÃO\033[m foi digitado!')
