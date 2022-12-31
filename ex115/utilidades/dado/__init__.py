@@ -34,7 +34,7 @@ def leiaFloat(n):
 def leiaNome(n):
     n = input(n)
     while True:
-        if n.isalpha() == True:
+        if n.strip().replace(' ','a').isalpha() == True and n !='':
             return str(n)
         else:
             print(f'\033[31mErro! Você digitou um nome inválido!\033[m')
